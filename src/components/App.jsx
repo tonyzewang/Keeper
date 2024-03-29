@@ -32,15 +32,14 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="questionbox3">
-        <h1>Title and Content</h1>
+      <div className="questionbox">
         <form>
           <input
             name="title"
             onChange={updateNewNote}
             value={newNote.title}
             type="text"
-            placeholder="What title do you want?"
+            placeholder="Title"
             id="title"
           />
           <input
@@ -48,7 +47,7 @@ function App() {
             onChange={updateNewNote}
             value={newNote.content}
             type="text"
-            placeholder="What content do you want?"
+            placeholder="Take a note..."
             id="content"
           />
           <button className="add" type="button" onClick={addNote}>
